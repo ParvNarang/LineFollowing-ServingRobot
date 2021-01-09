@@ -48,8 +48,6 @@ void loop() {
    statusSensor2 = digitalRead(touch2);
    statusSensor3 = digitalRead(touch3);
    statusSensor4 = digitalRead(touch4);
- 
-  
   
   if(statusSensor1 == HIGH){
      bed = 1;   
@@ -159,11 +157,6 @@ void loop() {
     
   }
 
-  
-
-  
-
-  
   else if(count == 1 && status == 1){
     Serial.print(  count  );
     stop();
@@ -197,15 +190,8 @@ void loop() {
   
   }
 
-
   }
 
-  
-     
-
-
-    
-  
    if( statusSensor == 1){        // LOW or HIGH .. has to be changed.....
     Serial.print(" sensor  ...... ");
     stop();
@@ -216,7 +202,6 @@ void loop() {
     delay(3000); 
     }          
  
-
 }
 void forward(){
   digitalWrite(10, HIGH);
@@ -230,7 +215,6 @@ void forward(){
 }
 
 void backward(){
-  
   digitalWrite(10, LOW);
   digitalWrite(11, HIGH);
   
@@ -256,17 +240,14 @@ void right(){
   digitalWrite(10, LOW);
   digitalWrite(11, LOW);
   
-  
   digitalWrite(9, HIGH);
   digitalWrite(6, LOW);
 
   digitalWrite(3, 150);
   digitalWrite(5, 150);
-  
 }
 
 void stop(){
-  
   digitalWrite(11, LOW);
   digitalWrite(10, LOW);
   
@@ -277,7 +258,6 @@ void stop(){
   digitalWrite(3, 0);
 }
 void turn() {
-  
   digitalWrite(10, LOW);
   digitalWrite(11, HIGH);
 
@@ -286,13 +266,7 @@ void turn() {
 
   digitalWrite(3, 100);
   digitalWrite(5, 100);
-
 }
-void return_right(){
-
-  
-}
-
 
 void lfr(){
   if(digitalRead(2) == HIGH && digitalRead(7) == HIGH && digitalRead(4) == LOW && digitalRead(12) == HIGH && digitalRead(13) == HIGH){
@@ -329,7 +303,5 @@ void lfr(){
   left();
   }
   
-
-
 
 }
