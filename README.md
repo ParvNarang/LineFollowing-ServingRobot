@@ -17,5 +17,5 @@ Initially in the code the robot is made to follow a track that serves 4-6 tables
   - 2 x DC Motors
   - 4 x Wheels
 
-# FUTUREPLAN
+# Future Plan
 Make use of Lidar.
